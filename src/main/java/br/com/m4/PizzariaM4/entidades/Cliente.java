@@ -24,16 +24,4 @@ public class Cliente {
     private Long id;
     private String nome;
     private String telefone;
-
-    @OneToMany(mappedBy = "cliente")
-    private List<Pedido> pedidos = new ArrayList<>();
-
-    public void adicionarPedido(Pedido pedido) {
-        pedidos.add(pedido);
-    }
-
-    public void removerPedido(Pedido pedido) {
-        pedidos.remove(pedido);
-    }
-}
-
+};
